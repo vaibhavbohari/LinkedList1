@@ -8,7 +8,6 @@ namespace DataStructure
 {
     internal class Linked_List<Gtype>
     {
-
         // variable
 
         Node<Gtype> head = null;
@@ -55,7 +54,20 @@ namespace DataStructure
                 }
             }
         }
+        public void AddFirstNode(Gtype data)
+        {
+            Node<Gtype> newNode = new Node<Gtype>(data);
+            newNode.next = head;
+            head = newNode;
+            Console.WriteLine("{0} : Nodes inserted in Linked list ", newNode.val);
+        }
+        //Method to Append Linked List
+        public void AppendLinked_List(Gtype data)
+        {
+            Add(data);
+            Console.WriteLine("{0} node Appended", data);
+        }
+
+        
     }
 }
-
-
