@@ -8,9 +8,8 @@ namespace DataStructure
 {
     class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-
             Linked_List<int> mylist = new Linked_List<int>();
 
             mylist.Add(56);

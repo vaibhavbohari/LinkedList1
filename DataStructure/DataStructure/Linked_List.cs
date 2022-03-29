@@ -9,9 +9,8 @@ namespace DataStructure
     internal class Linked_List<Gtype>
     {
 
-        
         // variable
-        
+
         Node<Gtype> head = null;
 
         public void Add(Gtype data)
@@ -58,6 +57,5 @@ namespace DataStructure
         }
     }
 }
-    
 
 

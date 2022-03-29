@@ -8,6 +8,7 @@ namespace DataStructure
 {
     internal class Node<Gtype>
     {
+
         public Gtype val;
         public Node<Gtype> next;
 
@@ -19,6 +20,3 @@ namespace DataStructure
         }
     }
 }
-
- 
-
