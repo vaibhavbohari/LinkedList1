@@ -17,8 +17,9 @@ namespace DataStructure
             mylist .Add(70);
             mylist .Display();
             Console.WriteLine("-------------------------");
-            Console.WriteLine("Popping Last Element in List");
-            mylist.PoP_Last_element();
+            
+            Console.WriteLine("Popping first Element in List");
+            mylist.PoP_First_element();
             mylist.Display();
         }
     }

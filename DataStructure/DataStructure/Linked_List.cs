@@ -77,25 +77,16 @@ namespace DataStructure
             prev.next = newestNode;
             return this.head;
         }
-
-        public Node<Gtype> PoP_Last_element()
+        internal Node<Gtype> PoP_First_element()
         {
             if (this.head == null)
             {
                 return null;
             }
-            if (head.next == null)
-            {
-                return null;
-            }
-            Node<Gtype> newNode = head;
-            while (newNode.next.next != null)
-            {
-                newNode = newNode.next;
-            }
-            newNode.next = null;
-            return head;
+            this.head = this.head.next;
+            return this.head;
         }
+        
         
     }
 }
