@@ -13,11 +13,13 @@ namespace DataStructure
             Linked_List<int> mylist = new Linked_List<int>();
 
             mylist .Add(56);
+            mylist .Add(30);
             mylist .Add(70);
             mylist .Display();
             Console.WriteLine("-------------------------");
-            mylist.InsertAtParticularPosition(1, 30);
-            mylist .Display();
+            Console.WriteLine("Popping Last Element in List");
+            mylist.PoP_Last_element();
+            mylist.Display();
         }
     }
 }

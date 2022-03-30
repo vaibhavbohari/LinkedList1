@@ -78,5 +78,24 @@ namespace DataStructure
             return this.head;
         }
 
+        public Node<Gtype> PoP_Last_element()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            if (head.next == null)
+            {
+                return null;
+            }
+            Node<Gtype> newNode = head;
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            newNode.next = null;
+            return head;
+        }
+        
     }
 }
