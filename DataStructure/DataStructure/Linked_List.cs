@@ -54,20 +54,29 @@ namespace DataStructure
                 }
             }
         }
-        public void AddFirstNode(Gtype data)
+        public Node<Gtype> InsertAtParticularPosition(int position, Gtype data)
         {
-            Node<Gtype> newNode = new Node<Gtype>(data);
-            newNode.next = head;
-            head = newNode;
-            Console.WriteLine("{0} : Nodes inserted in Linked list ", newNode.val);
-        }
-        //Method to Append Linked List
-        public void AppendLinked_List(Gtype data)
-        {
-            Add(data);
-            Console.WriteLine("{0} node Appended", data);
+
+            Node<Gtype> newestNode = new Node<Gtype>(data);
+            if (this.head == null)
+            {
+                return newestNode;
+            }
+            //Node Exchange
+
+            Node<Gtype> prev = null;
+            Node<Gtype> current = this.head;
+            int count = 0;
+            while (current != null && count < position)
+            {
+                prev = current;
+                current = current.next;
+                count++;
+            }
+            newestNode.next = prev.next;
+            prev.next = newestNode;
+            return this.head;
         }
 
-        
     }
 }

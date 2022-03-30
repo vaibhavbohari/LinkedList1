@@ -12,10 +12,12 @@ namespace DataStructure
         {
             Linked_List<int> mylist = new Linked_List<int>();
 
-            mylist.AppendLinked_List(56);
-            mylist.AppendLinked_List (30);
-            mylist.AppendLinked_List(70);
-            mylist.Display();
+            mylist .Add(56);
+            mylist .Add(70);
+            mylist .Display();
+            Console.WriteLine("-------------------------");
+            mylist.InsertAtParticularPosition(1, 30);
+            mylist .Display();
         }
     }
 }
