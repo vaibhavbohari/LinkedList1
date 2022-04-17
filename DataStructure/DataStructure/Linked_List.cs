@@ -10,7 +10,7 @@ namespace DataStructure
     {
 
         // variable
-        // store the count in tenp node
+        
 
         Node<Gtype> head = null;
 
